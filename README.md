@@ -1,0 +1,87 @@
+# Reform's Skills
+
+A curated collection of [Agent Skills](https://agentskills.io/home) reflecting [reformovo](https://github.com/reformovo)'s preferences, experience, and best practices, along with usage documentation for the tools.
+
+> [!IMPORTANT]
+> This is a proof-of-concept project for generating agent skills from source documentation and keeping them in sync.
+> Feedback and contributions are greatly welcome.
+
+## Installation
+
+```bash
+pnpx skills add reformovo/skills --skill='*'
+```
+
+or to install all of them globally:
+
+```bash
+pnpx skills add reformovo/skills --skill='*' -g
+```
+
+Learn more about the CLI usage at [skills](https://github.com/vercel-labs/skills).
+
+## Skills
+
+### Hand-maintained Skills
+
+> Opinionated
+
+Manually maintained with preferred tools, setup conventions, and best practices.
+
+| Skill | Description |
+|-------|-------------|
+| [reform](skills/reform) | Efficient vibe coding workflow: AI coding constraints (AGENTS.md, skills, mechanical gates), scope locking, verify-don't-trust gates, and review-with-understanding practices |
+
+### Skills Generated from Official Documentation
+
+> Unopinionated but with tilted focus (e.g. TypeScript, ESM, Composition API, and other modern stacks)
+
+Generated from official documentation.
+
+| Skill | Description | Source |
+|-------|-------------|--------|
+| _Coming soon_ | | |
+
+### Vendored Skills
+
+Synced from external repositories that maintain their own skills.
+
+| Skill | Description | Source |
+|-------|-------------|--------|
+| _Coming soon_ | | |
+
+## FAQ
+
+### What Makes This Collection Different?
+
+This collection uses git submodules to directly reference source documentation. This provides more reliable context and allows the skills to stay up-to-date with upstream changes over time.
+
+The project is also designed to be flexible - you can use it as a template to generate your own skills collection.
+
+### Skills vs llms.txt vs AGENTS.md
+
+To me, the value of skills lies in being **shareable** and **on-demand**.
+
+Being shareable makes prompts easier to manage and reuse across projects. Being on-demand means skills can be pulled in as needed, scaling far beyond what any agent's context window could fit at once.
+
+You might hear people say "AGENTS.md outperforms skills". I think that's true — AGENTS.md loads everything upfront, so agents always respect it, whereas skills can have false negatives where agents don't pull them in when you'd expect. That said, I see this more as a gap in tooling and integration that will improve over time. Skills are really just a standardized format for agents to consume—plain markdown files at the end of the day. Think of them as a knowledge base for agents. If you want certain skills to always apply, you can reference them directly in your AGENTS.md.
+
+## Generate Your Own Skills
+
+Fork this project to create your own customized skill collection.
+
+1. Fork or clone this repository
+2. Install dependencies: `pnpm install`
+3. Update `meta.ts` with your own projects and skill sources
+4. Run `pnpm start cleanup` to remove existing submodules and skills
+5. Run `pnpm start init` to clone the submodules
+6. Run `pnpm start sync` to sync vendored skills
+7. Ask your agent to `Generate skills for \<project\>` (recommended one at a time to manage token usage)
+
+See [AGENTS.md](AGENTS.md) for detailed generation guidelines.
+
+## License
+
+Skills and the scripts in this repository are [MIT](LICENSE.md) licensed.
+
+Vendored skills from external repositories retain their original licenses - see each skill directory for details.
