@@ -13,7 +13,14 @@ export const submodules: Record<string, string> = {}
 /**
  * Already generated skills, sync with their `skills/` directory
  */
-export const vendors: Record<string, VendorSkillMeta> = {}
+export const vendors: Record<string, VendorSkillMeta> = {
+  'vuejs-ai': {
+    source: 'https://github.com/vuejs-ai/skills',
+    skills: {
+      'vue-best-practices': 'vue-best-practices',
+    },
+  },
+}
 
 /**
  * Hand-written skills

@@ -1,0 +1,3 @@
+[submodule "vendor/vuejs-ai"]
+	path = vendor/vuejs-ai
+	url = https://github.com/vuejs-ai/skills

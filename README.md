@@ -48,7 +48,7 @@ Synced from external repositories that maintain their own skills.
 
 | Skill | Description | Source |
 |-------|-------------|--------|
-| _Coming soon_ | | |
+| [vue-best-practices](skills/vue-best-practices) | Vue 3 best practices: Composition API with `<script setup>` + TypeScript, reactivity, SFC structure, component data flow, composables, and performance optimization | [vuejs-ai/skills](https://github.com/vuejs-ai/skills) |
 
 ## FAQ
 
