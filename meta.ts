@@ -29,7 +29,8 @@ export const vendors: Record<string, VendorSkillMeta> = {
   'antfu': {
     source: 'https://github.com/antfu/skills',
     skills: {
-      antfu: 'antfu',
+      'antfu': 'antfu',
+      'antfu-design': 'antfu-design',
     },
   },
 }

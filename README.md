@@ -51,6 +51,7 @@ Synced from external repositories that maintain their own skills.
 | [vue-best-practices](skills/vue-best-practices) | Vue 3 best practices: Composition API with `<script setup>` + TypeScript, reactivity, SFC structure, component data flow, composables, and performance optimization | [vuejs-ai/skills](https://github.com/vuejs-ai/skills) |
 | [react-best-practices](skills/react-best-practices) | React and Next.js performance optimization: eliminating waterfalls, bundle size, server-side rendering, re-render optimization, and JavaScript performance | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) |
 | [antfu](skills/antfu) | Anthony Fu's opinionated tooling and conventions: ESLint config, project setup, Vue/Nuxt/UnoCSS app development, library publishing, and monorepos | [antfu/skills](https://github.com/antfu/skills) |
+| [antfu-design](skills/antfu-design) | antfu-style design conventions: UnoCSS-first semantic tokens with dual light/dark, design-read briefs, anti-slop rules, and micro-interaction polish for tooling, devtools, and product UIs | [antfu/skills](https://github.com/antfu/skills) |
 
 ## FAQ
 
