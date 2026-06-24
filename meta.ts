@@ -20,6 +20,12 @@ export const vendors: Record<string, VendorSkillMeta> = {
       'vue-best-practices': 'vue-best-practices',
     },
   },
+  'vercel-labs': {
+    source: 'https://github.com/vercel-labs/agent-skills',
+    skills: {
+      'react-best-practices': 'react-best-practices',
+    },
+  },
 }
 
 /**
