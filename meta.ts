@@ -16,7 +16,12 @@ export interface SourceMeta {
 export const submodules: Record<string, SourceMeta> = {
   styleguide: {
     url: 'https://github.com/google/styleguide',
-    skills: ['cpp-best-practices', 'typescript-best-practices', 'go-best-practices'],
+    skills: [
+      'cpp-best-practices',
+      'typescript-best-practices',
+      'go-best-practices',
+      'python-best-practices',
+    ],
   },
 }
 

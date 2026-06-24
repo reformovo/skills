@@ -42,6 +42,7 @@ Generated from official documentation.
 |-------|-------------|--------|
 | [cpp-best-practices](skills/cpp-best-practices) | Google C++ Style Guide distilled for agents: headers, scoping, classes, ownership, error handling, type safety, naming, comments, and formatting | [google/styleguide](https://github.com/google/styleguide) |
 | [go-best-practices](skills/go-best-practices) | Google Go Style Guide distilled for agents: clarity, simplicity, gofmt, naming, docs, packages, imports, errors, panics, contexts, concurrency, interfaces, configuration, and testing | [google/styleguide](https://github.com/google/styleguide) |
+| [python-best-practices](skills/python-best-practices) | Google Python Style Guide distilled for agents: imports, modules, Pythonic idioms, functions, typing, exceptions, mutability, formatting, docstrings, naming, decorators, properties, and concurrency | [google/styleguide](https://github.com/google/styleguide) |
 | [typescript-best-practices](skills/typescript-best-practices) | Google TypeScript Style Guide distilled for agents: source file structure, imports/exports, classes, functions, type system, naming, JSDoc, control flow, equality, and disallowed features | [google/styleguide](https://github.com/google/styleguide) |
 
 ### Vendored Skills

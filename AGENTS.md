@@ -17,7 +17,7 @@ There are three types of skill sources. The project lists are defined in `meta.t
 
 For OSS projects **without existing skills**. We clone the repo as a submodule and generate skills from their documentation.
 
-- **Projects:** Google Style Guide (`cpp-best-practices`, `go-best-practices`, `typescript-best-practices`)
+- **Projects:** Google Style Guide (`cpp-best-practices`, `go-best-practices`, `python-best-practices`, `typescript-best-practices`)
 - **Workflow:** Read docs → Understand → Generate skills
 - **Source:** `sources/{project}/` (documentation path depends on the upstream repo)
 
@@ -256,4 +256,4 @@ When generating skills (Type 1 only):
 
 See `meta.ts` for the canonical list of projects and their repository URLs.
 
-Current generated skills from `google/styleguide`: `cpp-best-practices`, `go-best-practices`, and `typescript-best-practices`.
+Current generated skills from `google/styleguide`: `cpp-best-practices`, `go-best-practices`, `python-best-practices`, and `typescript-best-practices`.
