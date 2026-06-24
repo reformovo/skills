@@ -11,21 +11,21 @@ PLEASE STRICTLY FOLLOW THE BEST PRACTICES FOR SKILL: https://platform.claude.com
 
 ## Skill Source Types
 
-There are two types of skill sources. The project lists are defined in `meta.ts`:
+There are three types of skill sources. The project lists are defined in `meta.ts`:
 
 ### Type 1: Generated Skills (`sources/`)
 
 For OSS projects **without existing skills**. We clone the repo as a submodule and generate skills from their documentation.
 
-- **Projects:** Vue, Nuxt, Vite, UnoCSS
+- **Projects:** Google Style Guide (`cpp-best-practices`, `go-best-practices`, `typescript-best-practices`)
 - **Workflow:** Read docs → Understand → Generate skills
-- **Source:** `sources/{project}/docs/`
+- **Source:** `sources/{project}/` (documentation path depends on the upstream repo)
 
 ### Type 2: Synced Skills (`vendor/`)
 
 For projects that **already maintain their own skills**. We clone their repo as a submodule and sync specified skills to ours.
 
-- **Projects:** Slidev, VueUse
+- **Projects:** VueJS AI, Vercel Labs, Anthony Fu
 - **Workflow:** Pull updates → Copy specified skills (with optional renaming)
 - **Source:** `vendor/{project}/skills/{skill-name}/`
 - **Config:** Each vendor specifies which skills to sync and their output names in `meta.ts`
@@ -46,7 +46,7 @@ You don't need to do anything about them unless being asked.
 │
 ├── sources/                    # Type 1: OSS repos (generate from docs)
 │   └── {project}/
-│       └── docs/               # Read documentation from here
+│       └── ...                 # Read relevant documentation paths from here
 │
 ├── vendor/                     # Type 2: Projects with existing skills (sync only)
 │   └── {project}/
@@ -96,7 +96,7 @@ You don't need to do anything about them unless being asked.
 
 #### Creating New Skills
 
-- **Read** source docs from `sources/{project}/docs/`
+- **Read** source docs from `sources/{project}/` (use the documentation paths relevant to the skill being generated)
 - **Read** the instructions in `instructions/{project}.md` for specific generation instructions if exists
 - **Understand** the documentation thoroughly
 - **Create** skill files in `skills/{output-name}/references/` where `{output-name}` is listed in `submodules[{project}].skills`
@@ -108,7 +108,7 @@ You don't need to do anything about them unless being asked.
 1. **Check** git diff since the SHA recorded in `GENERATION.md`:
    ```bash
    cd sources/{project}
-   git diff {old-sha}..HEAD -- docs/
+   git diff {old-sha}..HEAD -- {relevant-doc-path}/
    ```
 2. **Update** affected skill files based on changes
 3. **Update** `SKILL.md` with the new version of the tool/project and skills table.
@@ -255,3 +255,5 @@ When generating skills (Type 1 only):
 ## Supported Projects
 
 See `meta.ts` for the canonical list of projects and their repository URLs.
+
+Current generated skills from `google/styleguide`: `cpp-best-practices`, `go-best-practices`, and `typescript-best-practices`.
