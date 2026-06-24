@@ -5,10 +5,20 @@ export interface VendorSkillMeta {
   skills: Record<string, string> // sourceSkillName -> outputSkillName
 }
 
+export interface SourceMeta {
+  url: string
+  skills: string[] // output skill names generated from this source
+}
+
 /**
  * Repositories to clone as submodules and generate skills from source
  */
-export const submodules: Record<string, string> = {}
+export const submodules: Record<string, SourceMeta> = {
+  styleguide: {
+    url: 'https://github.com/google/styleguide',
+    skills: ['cpp-best-practices'],
+  },
+}
 
 /**
  * Already generated skills, sync with their `skills/` directory

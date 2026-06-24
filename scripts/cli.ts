@@ -1,3 +1,4 @@
+import type { SourceMeta } from '../meta.ts'
 import { execSync } from 'node:child_process'
 import {
   cpSync,
@@ -11,6 +12,7 @@ import {
 import { dirname, join } from 'node:path'
 import process from 'node:process'
 import { fileURLToPath } from 'node:url'
+
 import * as p from '@clack/prompts'
 import { manual, submodules, vendors } from '../meta.ts'
 
@@ -84,9 +86,9 @@ interface VendorConfig {
 
 async function initSubmodules(skipPrompt = false) {
   const allProjects: Project[] = [
-    ...Object.entries(submodules).map(([name, url]) => ({
+    ...Object.entries(submodules).map(([name, config]) => ({
       name,
-      url,
+      url: (config as SourceMeta).url,
       type: 'source' as const,
       path: `sources/${name}`,
     })),
@@ -368,9 +370,12 @@ async function checkUpdates() {
 function getExpectedSkillNames(): Set<string> {
   const expected = new Set<string>()
 
-  // Skills from submodules (generated skills use same name as submodule key)
-  for (const name of Object.keys(submodules)) {
-    expected.add(name)
+  // Skills generated from source submodules
+  for (const config of Object.values(submodules)) {
+    const sourceConfig = config as SourceMeta
+    for (const outputName of sourceConfig.skills) {
+      expected.add(outputName)
+    }
   }
 
   // Skills from vendors (use the output skill name)
@@ -405,9 +410,9 @@ async function cleanup(skipPrompt = false) {
 
   // 1. Find and remove extra submodules
   const allProjects: Project[] = [
-    ...Object.entries(submodules).map(([name, url]) => ({
+    ...Object.entries(submodules).map(([name, config]) => ({
       name,
-      url,
+      url: (config as SourceMeta).url,
       type: 'source' as const,
       path: `sources/${name}`,
     })),

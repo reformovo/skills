@@ -40,7 +40,7 @@ Generated from official documentation.
 
 | Skill | Description | Source |
 |-------|-------------|--------|
-| _Coming soon_ | | |
+| [cpp-best-practices](skills/cpp-best-practices) | Google C++ Style Guide distilled for agents: headers, scoping, classes, ownership, error handling, type safety, naming, comments, and formatting | [google/styleguide](https://github.com/google/styleguide) |
 
 ### Vendored Skills
 

@@ -40,7 +40,7 @@ You don't need to do anything about them unless being asked.
 
 ```
 .
-├── meta.ts                     # Project metadata (repos & URLs)
+├── meta.ts                     # Project metadata (repos, source skills & vendor skills)
 ├── instructions/               # Instructions for generating skills
 │   └── {project}.md            # Instructions for generating skills for {project}
 │
@@ -62,7 +62,7 @@ You don't need to do anything about them unless being asked.
             └── *.md            # Individual skill files
 ```
 
-**Important:** For Type 1 (generated), the `skills/{project}/` name must match `sources/{project}/`. For Type 2 (synced), the output name is configured in `meta.ts` and may differ from the source skill name.
+**Important:** For Type 1 (generated), `sources/{project}/` should keep the upstream project/repository name. Generated output names are configured in `meta.ts` via `submodules[{project}].skills` and may differ from the source directory name. This allows one source repository to generate multiple skills.
 
 ## Workflows
 
@@ -74,7 +74,10 @@ You don't need to do anything about them unless being asked.
    ```ts
    export const submodules = {
      // ... existing entries
-     'new-project': 'https://github.com/org/repo',
+     'new-project': {
+       url: 'https://github.com/org/repo',
+       skills: ['new-project-best-practices'],
+     },
    }
    ```
 
@@ -96,7 +99,7 @@ You don't need to do anything about them unless being asked.
 - **Read** source docs from `sources/{project}/docs/`
 - **Read** the instructions in `instructions/{project}.md` for specific generation instructions if exists
 - **Understand** the documentation thoroughly
-- **Create** skill files in `skills/{project}/references/`
+- **Create** skill files in `skills/{output-name}/references/` where `{output-name}` is listed in `submodules[{project}].skills`
 - **Create** `SKILL.md` index listing all skills
 - **Create** `GENERATION.md` with the source git SHA
 

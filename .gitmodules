@@ -7,3 +7,6 @@
 [submodule "vendor/antfu"]
 	path = vendor/antfu
 	url = https://github.com/antfu/skills
+[submodule "sources/styleguide"]
+	path = sources/styleguide
+	url = https://github.com/google/styleguide
