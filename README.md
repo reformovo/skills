@@ -41,6 +41,7 @@ Generated from official documentation.
 | Skill | Description | Source |
 |-------|-------------|--------|
 | [cpp-best-practices](skills/cpp-best-practices) | Google C++ Style Guide distilled for agents: headers, scoping, classes, ownership, error handling, type safety, naming, comments, and formatting | [google/styleguide](https://github.com/google/styleguide) |
+| [typescript-best-practices](skills/typescript-best-practices) | Google TypeScript Style Guide distilled for agents: source file structure, imports/exports, classes, functions, type system, naming, JSDoc, control flow, equality, and disallowed features | [google/styleguide](https://github.com/google/styleguide) |
 
 ### Vendored Skills
 
