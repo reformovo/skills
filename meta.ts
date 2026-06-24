@@ -26,6 +26,12 @@ export const vendors: Record<string, VendorSkillMeta> = {
       'react-best-practices': 'react-best-practices',
     },
   },
+  'antfu': {
+    source: 'https://github.com/antfu/skills',
+    skills: {
+      antfu: 'antfu',
+    },
+  },
 }
 
 /**
