@@ -14,7 +14,11 @@ export interface SourceMeta {
  * Repositories to clone as submodules and generate skills from source
  */
 export const submodules: Record<string, SourceMeta> = {
-  styleguide: {
+  'rust-best-practices': {
+    url: 'https://github.com/apollographql/rust-best-practices',
+    skills: ['rust-best-practices'],
+  },
+  'styleguide': {
     url: 'https://github.com/google/styleguide',
     skills: [
       'cpp-best-practices',

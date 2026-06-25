@@ -10,3 +10,6 @@
 [submodule "sources/styleguide"]
 	path = sources/styleguide
 	url = https://github.com/google/styleguide
+[submodule "sources/rust-best-practices"]
+	path = sources/rust-best-practices
+	url = https://github.com/apollographql/rust-best-practices
