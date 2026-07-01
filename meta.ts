@@ -52,6 +52,14 @@ export const vendors: Record<string, VendorSkillMeta> = {
       'antfu-design': 'antfu-design',
     },
   },
+  'mattpocock': {
+    source: 'https://github.com/mattpocock/skills',
+    skillsPath: 'skills/engineering',
+    skills: {
+      'grill-with-docs': 'grill-with-docs',
+      'domain-modeling': 'domain-modeling',
+    },
+  },
 }
 
 /**

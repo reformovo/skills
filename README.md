@@ -56,6 +56,8 @@ Synced from external repositories that maintain their own skills.
 | [react-best-practices](skills/react-best-practices) | React and Next.js performance optimization: eliminating waterfalls, bundle size, server-side rendering, re-render optimization, and JavaScript performance | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) |
 | [antfu](skills/antfu) | Anthony Fu's opinionated tooling and conventions: ESLint config, project setup, Vue/Nuxt/UnoCSS app development, library publishing, and monorepos | [antfu/skills](https://github.com/antfu/skills) |
 | [antfu-design](skills/antfu-design) | antfu-style design conventions: UnoCSS-first semantic tokens with dual light/dark, design-read briefs, anti-slop rules, and micro-interaction polish for tooling, devtools, and product UIs | [antfu/skills](https://github.com/antfu/skills) |
+| [domain-modeling](skills/domain-modeling) | Project domain modeling: glossary maintenance, terminology challenges, concrete scenario stress tests, code cross-checks, and ADR creation when a decision merits a record | [mattpocock/skills](https://github.com/mattpocock/skills) |
+| [grill-with-docs](skills/grill-with-docs) | A grilling session skill for sharpening a plan or design while producing supporting domain-modeling docs such as ADRs and glossary updates | [mattpocock/skills](https://github.com/mattpocock/skills) |
 
 ## FAQ
 

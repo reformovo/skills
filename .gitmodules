@@ -13,3 +13,6 @@
 [submodule "sources/rust-best-practices"]
 	path = sources/rust-best-practices
 	url = https://github.com/apollographql/rust-best-practices
+[submodule "vendor/mattpocock"]
+	path = vendor/mattpocock
+	url = https://github.com/mattpocock/skills
