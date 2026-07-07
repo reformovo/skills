@@ -68,4 +68,5 @@ export const vendors: Record<string, VendorSkillMeta> = {
 export const manual = [
   'reform',
   'terraform-best-practices',
+  'kubernetes-best-practices',
 ]

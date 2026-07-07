@@ -30,6 +30,7 @@ Manually maintained with preferred tools, setup conventions, and best practices.
 
 | Skill | Description |
 |-------|-------------|
+| [kubernetes-best-practices](skills/kubernetes-best-practices) | Kubernetes best practices: workload manifests, security contexts, RBAC, NetworkPolicies, configuration, storage, autoscaling, reliability, Helm/GitOps, and troubleshooting |
 | [reform](skills/reform) | Efficient vibe coding workflow: AI coding constraints (AGENTS.md, skills, mechanical gates), scope locking, verify-don't-trust gates, and review-with-understanding practices |
 | [terraform-best-practices](skills/terraform-best-practices) | Terraform and OpenTofu best practices: HCL style, module design, state and import workflows, CI plan/apply controls, testing, security, Stacks, and provider development |
 
