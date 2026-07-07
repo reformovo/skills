@@ -65,4 +65,7 @@ export const vendors: Record<string, VendorSkillMeta> = {
 /**
  * Hand-written skills
  */
-export const manual = ['reform']
+export const manual = [
+  'reform',
+  'terraform-best-practices',
+]

@@ -31,6 +31,7 @@ Manually maintained with preferred tools, setup conventions, and best practices.
 | Skill | Description |
 |-------|-------------|
 | [reform](skills/reform) | Efficient vibe coding workflow: AI coding constraints (AGENTS.md, skills, mechanical gates), scope locking, verify-don't-trust gates, and review-with-understanding practices |
+| [terraform-best-practices](skills/terraform-best-practices) | Terraform and OpenTofu best practices: HCL style, module design, state and import workflows, CI plan/apply controls, testing, security, Stacks, and provider development |
 
 ### Skills Generated from Official Documentation
 
@@ -94,3 +95,5 @@ See [AGENTS.md](AGENTS.md) for detailed generation guidelines.
 Skills and the scripts in this repository are [MIT](LICENSE.md) licensed.
 
 Vendored skills from external repositories retain their original licenses - see each skill directory for details.
+
+Hand-maintained skills may synthesize guidance from multiple sources. See each skill's `SKILL.md` source notes for attribution.
