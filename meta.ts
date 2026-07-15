@@ -54,10 +54,11 @@ export const vendors: Record<string, VendorSkillMeta> = {
   },
   'mattpocock': {
     source: 'https://github.com/mattpocock/skills',
-    skillsPath: 'skills/engineering',
+    skillsPath: 'skills',
     skills: {
-      'grill-with-docs': 'grill-with-docs',
-      'domain-modeling': 'domain-modeling',
+      'engineering/grill-with-docs': 'grill-with-docs',
+      'engineering/domain-modeling': 'domain-modeling',
+      'productivity/grilling': 'grilling',
     },
   },
 }

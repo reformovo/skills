@@ -60,6 +60,7 @@ Synced from external repositories that maintain their own skills.
 | [antfu-design](skills/antfu-design) | antfu-style design conventions: UnoCSS-first semantic tokens with dual light/dark, design-read briefs, anti-slop rules, and micro-interaction polish for tooling, devtools, and product UIs | [antfu/skills](https://github.com/antfu/skills) |
 | [domain-modeling](skills/domain-modeling) | Project domain modeling: glossary maintenance, terminology challenges, concrete scenario stress tests, code cross-checks, and ADR creation when a decision merits a record | [mattpocock/skills](https://github.com/mattpocock/skills) |
 | [grill-with-docs](skills/grill-with-docs) | A grilling session skill for sharpening a plan or design while producing supporting domain-modeling docs such as ADRs and glossary updates | [mattpocock/skills](https://github.com/mattpocock/skills) |
+| [grilling](skills/grilling) | Relentless, one-question-at-a-time interviews that stress-test plans and designs while recommending an answer for each decision | [mattpocock/skills](https://github.com/mattpocock/skills) |
 
 ## FAQ
 
