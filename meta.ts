@@ -61,6 +61,12 @@ export const vendors: Record<string, VendorSkillMeta> = {
       'productivity/grilling': 'grilling',
     },
   },
+  'gpui-component': {
+    source: 'https://github.com/longbridge/gpui-component',
+    skills: {
+      'gpui': 'gpui',
+    },
+  },
 }
 
 /**

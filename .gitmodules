@@ -16,3 +16,6 @@
 [submodule "vendor/mattpocock"]
 	path = vendor/mattpocock
 	url = https://github.com/mattpocock/skills
+[submodule "vendor/gpui-component"]
+	path = vendor/gpui-component
+	url = https://github.com/longbridge/gpui-component

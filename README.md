@@ -61,6 +61,7 @@ Synced from external repositories that maintain their own skills.
 | [domain-modeling](skills/domain-modeling) | Project domain modeling: glossary maintenance, terminology challenges, concrete scenario stress tests, code cross-checks, and ADR creation when a decision merits a record | [mattpocock/skills](https://github.com/mattpocock/skills) |
 | [grill-with-docs](skills/grill-with-docs) | A grilling session skill for sharpening a plan or design while producing supporting domain-modeling docs such as ADRs and glossary updates | [mattpocock/skills](https://github.com/mattpocock/skills) |
 | [grilling](skills/grilling) | Relentless, one-question-at-a-time interviews that stress-test plans and designs while recommending an answer for each decision | [mattpocock/skills](https://github.com/mattpocock/skills) |
+| [gpui](skills/gpui) | GPUI framework knowledge for agents: actions/keybindings, async tasks, context management, custom elements, entities, events, focus, globals, layout/styling, and testing | [longbridge/gpui-component](https://github.com/longbridge/gpui-component) |
 
 ## FAQ
 
